@@ -1,0 +1,210 @@
+$main-color: #F3F3F3;
+$accent-color:#E9D9BB;
+
+//this style is for elements which would like to applied hover effect (from black to green) 
+
+@mixin hover-effect {
+    color:#000;
+    font-size: 35px;
+    transition: 0.1s;
+
+
+    &:hover{
+        font-size: 37px;
+        color:#009163;
+        font-weight: bolder;
+        transition: 0.1s;
+    }
+}
+
+@mixin question-symbol{
+    position: fixed;
+    top: 10%;
+    left:11%;
+}
+
+
+@mixin question-question {
+    width:65%;
+    margin-left: 20%;
+    display: flex;
+}
+
+@mixin question-question-title {
+    position: relative;
+    margin-left: 5%;
+    margin-top: 23%;
+    font-size: 72px;
+    color:#FFF
+}
+
+@mixin  question-answer {
+    margin-top: 5%;
+    margin-left: 35%;
+    
+    >p{
+        @include hover-effect;
+        margin-bottom: 3%;
+    }
+}
+
+
+@mixin question-question-content {
+    position: relative;
+    margin-left: 6%;
+    // padding-left: 10%;
+    margin-top: 23%;
+    font-size: 72px;
+}
+
+// default variables for customized background
+@mixin width-and-height{
+    width:30vw;
+    height: 17vh;
+    position: fixed;   
+}
+
+@mixin left-1 {
+    background-color: #80D4DE;
+    border-radius: 0px 200px 0px 0px;
+    position: fixed;;
+    top: -5%;
+    transition: 0.3s;
+}
+
+@mixin  left-2 {
+    background-color: #E9D8BB;
+    border-radius: 0px 0px 200px 0px;
+    position: fixed;
+    top:12%;
+    transition: 0.4s;
+}
+
+@mixin left-3 {
+    background-color: #FFFFFF;
+    display: flex;
+    position: fixed;;
+    top: 29%;
+    transition: 0.5s;
+}
+
+@mixin left-4 {
+    background-color: #FFFFFF;
+    display: flex;
+    position: fixed;;
+    top: 46%;
+    transition: 0.6s;
+}
+
+@mixin left-5 {
+    background-color: #80D4DE;
+    border-radius: 0px 200px 0px 0px;
+    position: fixed;
+    top: 63%;
+    transition: 0.7s;
+}
+
+@mixin left-6 {
+    background-color: #E9D8BB;
+    border-radius: 0px 0px 200px 0px;
+    position: fixed;
+    top: 80%;
+    transition: 0.8s;
+}
+
+@mixin left-7 {
+    background-color: #FFAB00;
+    border-radius: 80px 80px 0px 0px;
+    position: fixed;
+    width: 20vw;
+    top: 95%;
+    transition: 0.9s;
+}
+
+
+
+@mixin right-1 {
+    background-color: #FFFF;
+    position: fixed;;
+    top: -5%;
+    border-radius: 0px 0px 0px 200px;
+    transition: 0.3s;
+}
+
+@mixin  right-2 {
+    background-color: #FFAB00;
+    position: fixed;
+    top:12%;
+    width: 5%;
+    height: 10%;
+    border-radius: 200px;
+    transition: 0.4s;
+}
+
+@mixin right-3 {
+    background-color: #E9D8BB;
+    position: fixed;;
+    top: 25%;
+    border-radius: 200px 0px 0px 200px;
+    transition: 0.5s;
+}
+
+@mixin right-4 {
+    background-color: #80D4DE;
+    position: fixed;;
+    top: 42%;
+    border-radius: 200px 0px 0px 0px;
+    transition: 0.6s;
+}
+
+@mixin right-5 {
+    background-color: #80D4DE;
+    position: fixed;
+    top: 59%;
+    border-radius: 100px 0px 0px 100px;
+    transition: 0.7s;
+}
+
+@mixin right-6 {
+    background-color:#E9D8BB;
+    position: fixed;
+    top: 76%;
+    transition: 0.8s;
+}
+
+@mixin right-7 {
+    background-color: #FFAB00;
+    position: fixed;
+    width: 20vw;
+    top: 93%;
+    border-radius: 80px 80px 0px 0px;
+    transition: 0.9s;
+}
+
+@mixin default-1 {
+    top: -10%;
+}
+
+@mixin default-2 {
+    top: 7%;
+}
+
+@mixin default-3 {
+    top: 24%;
+}
+
+@mixin default-4 {
+    top: 38%;
+}
+
+@mixin default-5 {
+    top: 55%;
+}
+
+@mixin default-6 {
+    top: 72%;
+}
+
+@mixin default-7 {
+     top:89%;
+}

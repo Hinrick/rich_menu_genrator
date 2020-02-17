@@ -1,0 +1,208 @@
+@import '../../assets/styles/variables';
+
+
+.intro-background{
+    display: flex;
+    justify-content: space-between;
+
+    .background-content{
+        display: flex;
+        >div {
+            border:10x solid #000;
+            width:7vw;
+            height: 100vh;
+        }
+        .background-content-1{
+            position: fixed;
+            right: 37%;
+            .background-content-1-1{   
+                width:7vw;
+                height: 25%; 
+                background-color: #FFFF;
+                border-radius: 150px 0px 0px 0px;
+                position: fixed;
+                top:90%
+            }
+        }  
+        .background-content-2{
+            position: fixed;
+            right: 30%;
+            .background-content-2-1{   
+                width:7vw;
+                height: 25%; 
+                background-color: #FEB8B9;
+                border-radius: 0px 150px 0px 0px;
+                position: fixed;
+                top:80%
+
+            }
+        }    
+        .background-content-3{
+            position: fixed;
+            right: 23%;
+            .background-content-3-1{   
+                width:100%;
+                height: 25%; 
+                background-color: #FEB8B9;
+                border-radius: 0px 0px 100px 100px;
+
+            }
+             .background-content-3-2{   
+                width:7vw;
+                height: 20%; 
+                background-color:#0E9263;
+                border-radius: 0px 0px 0px 0px;
+                position: fixed;
+                top:80%;   
+            }
+
+            .background-content-3-3{   
+                width:7vw;
+                height: 30%; 
+                background-color:$main-color;
+                border-radius: 0px 0px 0px 200px;
+                position: fixed;
+                top:70%;
+
+            }
+            .background-content-3-4{   
+                width:7vw;
+                height: 30%; 
+                background-color:#FE6C59;
+                border-radius: 100px 100px 100px 100px;
+                position: fixed;
+                top:60%;
+
+            }
+        }
+        .background-content-4{
+            position: fixed;
+            right: 16%;
+            .background-content-4-1{   
+                width:100%;
+                height: 20%; 
+                background-color: #80D4DE;
+                border-radius: 0px 0px 0px 150px;
+
+            }
+             .background-content-4-2{   
+                width:7vw;
+                height: 30%; 
+                background-color:#E9D8BB;
+                border-radius: 50px 50px 50px 50px;
+                position: fixed;
+                top:20%;
+                
+            }
+            .background-content-4-3{   
+                width:7vw;
+                height: 20%; 
+                background-color:#0E9263;
+                border-radius: 0px 0px 0px 0px;
+                position: fixed;
+                top:80%;
+
+            }
+            .background-content-4-4{   
+                width:7vw;
+                height: 30%; 
+                background-color:$main-color;
+                border-radius: 0px 0px 200px 0px;
+                position: fixed;
+                top:70%;
+
+            }
+        }
+        .background-content-5{
+            position: fixed;
+            right: 9%;
+            .background-content-5-1{   
+                width:100%;
+                height: 30%; 
+                background-color: #0E9263;
+                border-radius: 0px 0px 150px 150px;
+
+            }
+             .background-content-5-2{   
+                width:7vw;
+                height: 20%; 
+                background-color: #FFF;
+                border-radius: 0px 0px 150px 0px;
+                position: fixed;
+                top:0px;
+                
+            }
+            .background-content-5-3{   
+                width:7vw;
+                height: 50%; 
+                background-color: #80D4DE;
+                border-radius: 150px 0px 0px 0px;
+                position: fixed;
+                top: 50%;
+                
+            }
+        }
+
+        .background-content-6{
+            position: fixed;
+            right: 2%;
+            .background-content-6-1{   
+                width:100%;
+                height: 20%; 
+                background-color: #E9D8BB;
+                border-radius: 0px 0px 0px 0px;
+
+            }
+             .background-content-6-2{   
+                width:7vw;
+                height: 30%; 
+                background-color:$main-color;
+                border-radius: 50px 50px 0px 0px;
+                position: fixed;
+                top:0px;
+
+
+                
+            }
+            .background-content-6-3{   
+                width:7vw;
+                height: 60%; 
+                background-color:#FE6C59;
+                border-radius: 50px 50px 0px 0px;
+                position: fixed;
+                top:20%;
+
+            }
+            .background-content-6-4{   
+                width:7vw;
+                height: 50%; 
+                background-color:#055068;
+                border-radius: 0px 100px 0px 0px;
+                position: fixed;
+                top:60%;
+
+            }
+        }
+        .background-content-7{
+            position: fixed;
+            right: -5%;
+            .background-content-7-1{   
+                width:100%;
+                height: 20%; 
+                background-color: #FEAC00;
+                border-radius: 0px 0px 0px 50px;
+
+            }
+             .background-content-7-2{   
+                width:100%;
+                height: 30%; 
+                background-color: #FEB8B9;
+                border-radius: 50px 0px 0px 50px;
+                position: fixed;
+                top:30%;
+
+            }
+        }
+
+    }
+}

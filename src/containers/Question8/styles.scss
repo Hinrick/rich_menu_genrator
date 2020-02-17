@@ -1,0 +1,133 @@
+@import '../../assets/styles/variables';
+
+
+@mixin ctn {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 15px;
+    transition: 0.5s;
+
+
+    &:hover{
+        border:2px solid $accent-color;
+        transition: 0.5s;
+    }
+}
+
+.question8{
+    height: 100vh;
+    width: 100vw;
+    background-color:$main-color;
+
+    .question8-question-symbol{
+        position: fixed;
+        top:15%;
+        left:10%;
+        // float: right;
+        justify-content: flex-end;
+
+        .question8-question-symbol-1{
+            width:20vw;
+            height: 7vw;
+            background-color: $accent-color;
+            position: fixed;
+            left:15%;
+        }
+
+        .question8-question-symbol-2{
+            width:14vw;
+            height: 7vw;
+            background-color:#FE6C59;
+            position: fixed;
+            left:21%;
+            top:28.7%;
+
+            // position: fixed;
+            // top:10%;
+            // left:20%;
+        }
+
+        .question8-question-symbol-3{
+            width:7vw;
+            height: 7vw;
+            background-color:#FEB8B9;
+            position: fixed;
+            top:42.3%;
+            left:28%;
+            // position: fixed;
+            // top:10%;
+            // left:20%;
+        }
+
+    }
+
+    .question8-question{
+        @include question-question;
+
+        .question8-question-title{
+            @include question-question-title;
+            color:#000;
+        }
+
+        .question8-question-content{
+            @include question-question-content;
+        }
+
+    }
+
+    .question8-answer{
+        @include question-answer;
+
+        >div{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 5%;
+            // width: 60%;
+            >div{
+                margin-right: 5%;
+            }
+
+            .question8-answer-1{
+                @include ctn;
+                background-color: #333333;
+
+
+            }
+
+            .question8-answer-2{
+                @include ctn;
+                background-color: #FEAC00;
+                
+            }
+
+            .question8-answer-3{
+                @include ctn;
+                background-color: #FEB8B9;
+            }
+
+            .question8-answer-4{
+                @include ctn;
+                background-color: #FFFF;
+                
+            }
+            
+            .question8-answer-5{
+                @include ctn;
+                background-color: #0E9263;
+                
+            }
+
+            .question8-answer-6{
+                @include ctn;
+                background-color: #82D4DE;
+            }
+
+            .question8-answer-7{
+                @include ctn;
+                background-color: #C8A4E5;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,70 @@
+@import '../../assets/styles/variables';
+
+@mixin symbol {
+    width:20vw;
+    height: 13vh;
+    left: 11%;
+}
+
+.question2{
+    height: 100vh;
+    width: 100vw;
+    background-color: #E9D9BB;
+
+
+    .question2-question-symbol{
+        @include question-symbol;
+
+        .question2-question-symbol-1{
+            @include symbol;
+            background-color: #FFAB00;
+            position: fixed;
+            top:30%;
+
+        }
+        .question2-question-symbol-2{
+            @include symbol;
+            background-color: #FEB8B9;
+            position: fixed;
+            top:50%;
+
+        }
+        // margin-top: 10%;
+    }
+
+    .question2-question{
+        @include question-question;
+
+        .question2-question-title{
+            @include question-question-title;
+        }
+
+        .question2-question-content{
+            @include question-question-content;
+        }
+
+    }
+
+    .question2-answer{
+        @include question-answer;
+        overflow-y: scroll;
+        height: 40vh;
+        margin-right: 35%;
+        position: relative;
+        // margin-bottom: 10%;
+
+        >p{
+            margin-bottom: 8%;
+        }
+    }
+
+    .bottom-shadow{
+        @include question-answer;
+        height: 1vh;
+        margin-right: 35%;
+        margin-top: 0px;
+        box-shadow:  0px -20px 25px 30px $accent-color;
+        position: relative;
+        
+    }
+}

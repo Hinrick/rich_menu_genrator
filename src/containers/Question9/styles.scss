@@ -1,0 +1,54 @@
+@import '../../assets/styles/variables';
+
+.question9{
+    height: 100vh;
+    width: 100vw;
+    background-color:$main-color;
+
+    .question9-question-symbol{
+
+
+        .question9-question-symbol-1{
+            width:7vw;
+            height: 14vw;
+            border-radius: 7vw 0px 0px 7vw;
+            background-color:#FFB8B9;
+            position: fixed;
+            top:27%;
+            left:12%;
+
+        }
+
+        .question9-question-symbol-2{
+            width:3.5vw;
+            height: 7vw;
+            border-radius: 3.5vw 0px 0px 3.5vw;
+            background-color:#FFAB00;
+            position: fixed;
+            top:40%;
+            left:25%;
+            // position: fixed;
+            // top:10%;
+            // left:20%;
+        }
+
+    }
+
+    .question9-question{
+        @include question-question;
+
+        .question9-question-title{
+            @include question-question-title;
+            color:#000;
+        }
+
+        .question9-question-content{
+            @include question-question-content;
+        }
+
+    }
+
+    .question9-answer{
+        @include question-answer;
+    }
+}

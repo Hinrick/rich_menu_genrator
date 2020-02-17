@@ -1,0 +1,51 @@
+@import '../../assets/styles/variables';
+
+.question7{
+    height: 100vh;
+    width: 100vw;
+    background-color:$main-color;
+
+    .question7-question-symbol{
+        position: fixed;
+        top:20%;
+        left:15%;
+        transform: rotate(-45deg);
+
+        .question7-question-symbol-1{
+            width:7vw;
+            height: 7vw;
+            border-radius: 7vw 0px 0px 0px;
+            background-color:#055068;
+
+        }
+
+        .question7-question-symbol-2{
+            width:14vw;
+            height: 7vw;
+            border-radius: 0px 0px 7vw 7vw;
+            background-color:#FFAB00;
+            // position: fixed;
+            // top:10%;
+            // left:20%;
+        }
+
+    }
+
+    .question7-question{
+        @include question-question;
+
+        .question7-question-title{
+            @include question-question-title;
+            color:#000;
+        }
+
+        .question7-question-content{
+            @include question-question-content;
+        }
+
+    }
+
+    .question7-answer{
+        @include question-answer;
+    }
+}

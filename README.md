@@ -66,3 +66,53 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+### 三種 Loading Page, Preview, Complete 的處理方式
+
+上面三頁因為在 style 處理上比較複雜，左右兩邊的框框各有七個，但以不同形狀和顏色組合。因此透過同一個 component 不過不同的 className 來做出不同效果。也藉著同一個 component 分享動畫。
+
+className 編碼如下 :
+1. Loading Page 
+左邊的七個 div 
+
+loading-left-1
+loading-left-2
+loading-left-3
+loading-left-4
+loading-left-5
+loading-left-6
+loading-left-7
+
+右邊的七個 div
+
+loading-right-1
+loading-right-2
+loading-right-3
+loading-right-4
+loading-right-5
+loading-right-6
+loading-right-7
+
+2. Preview Page
+
+左邊的七個 div 
+
+loading-left-1
+loading-left-2
+loading-left-3
+loading-left-4
+loading-left-5
+loading-left-6
+loading-left-7
+
+右邊的七個 div
+
+loading-right-1
+loading-right-2
+loading-right-3
+loading-right-4
+loading-right-5
+loading-right-6
+loading-right-7

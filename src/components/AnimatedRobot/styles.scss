@@ -1,0 +1,37 @@
+.robot{
+    position: fixed;
+
+
+    .robot-head-left{
+        width:13%;
+        position: fixed;
+        left:73.5%;
+        top:58%;
+        transform: rotate(-10deg);
+        transition: 1s;
+    }
+
+    // .robot-head{
+    //     width:13%;
+    //     position: fixed;
+    //     left:75%;
+    //     top:55%;
+    //     transition: 0.2s;
+    // }
+
+    .robot-head-right{
+        width:13%;
+        position: fixed;
+        left:76.5%;
+        top:58%;
+        transform: rotate(10deg);
+        transition: 1s;
+
+    }
+
+    .robot-body{
+        position: fixed;
+        left:74.5%;
+        top:88%
+    }
+}

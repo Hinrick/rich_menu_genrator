@@ -1,0 +1,997 @@
+@import '../../assets/styles/variables';
+
+.loading-background{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    >div{
+        .loading-left-1{
+            @include width-and-height();
+            @include left-1;
+            left:-15%;
+        }
+        .loading-left-1-after{
+            @include width-and-height();
+            @include left-1;
+            left:-15.5%;
+        }
+        .first-page-left-1{
+            @include width-and-height();
+            @include default-1;
+            background-color: #FEAC00;
+            left: -13%;
+            border-radius: 0px 200px 0px 0px;
+            transition:1s;
+        }
+        .first-page-left-1-entry{
+            @include width-and-height();
+            @include default-1;
+            background-color: #FEAC00;
+            left: -10%;
+            border-radius: 0px 200px 0px 0px;
+            transition:1s;
+        }
+        // .first-page-left-1-entry-finished{
+        //     @include width-and-height();
+        //     @include default-1;
+        //     background-color: #FEAC00;
+        //     left: -11%;
+        //     border-radius: 0px 200px 0px 0px;
+        //     transition:0.5s;
+        // }
+        .complete-left-1{
+            @include width-and-height();
+            @include default-1;
+            background-color: #FEAC00;
+            left: -12%;
+            border-radius: 0px 300px 300px 0px;
+        }
+        .preview-left-1{
+            @include width-and-height();
+            @include default-1;
+            background-color: #FEAC00;
+            left: -12%;
+            border-radius: 0px 300px 300px 0px;
+        }
+        .loading-left-2{
+            @include width-and-height();
+            @include left-2;
+            left:-15%;
+        }
+        .loading-left-2-after{
+            @include width-and-height();
+            @include left-2;
+            left:-15.5%;
+        }
+
+        .first-page-left-2{
+            @include width-and-height;
+            @include default-2;
+            left: -19%;
+            background-color: #E9D8BB;
+            border-radius: 0px 0px 150px 0px;
+        }
+
+        .first-page-left-2-entry{
+            @include width-and-height;
+            @include default-2;
+            left: -16%;
+            background-color: #E9D8BB;
+            border-radius: 0px 0px 150px 0px;
+            transition:2s
+        }
+
+        // .first-page-left-2-entry-finished{
+        //     @include width-and-height;
+        //     @include default-2;
+        //     left: -17%;
+        //     background-color: #E9D8BB;
+        //     border-radius: 0px 0px 150px 0px;
+        //     transition:1s
+        // }
+
+        .complete-left-2{
+            @include width-and-height;
+            @include default-2;
+            left: -16%;
+            background-color: #E9D8BB;
+            border-radius: 0px 0px 150px 0px;
+
+            .complete-left-2-inverse-circle{
+                @include width-and-height;
+                background-color: #0E9263;
+                width: 40%;
+                left:0;
+                border-radius: 150px 0px 0px 150px;
+
+
+
+            }
+            .complete-left-2-circle{
+                width: 0%;
+            }
+        }
+
+        .preview-left-2{
+            @include width-and-height;
+            @include default-2;
+            left: -16%;
+            background-color: #E9D8BB;
+            border-radius: 0px 0px 150px 0px;
+
+            .preview-left-2-inverse-circle{
+                @include width-and-height;
+                background-color: $main-color;
+                width: 40%;
+                left:0;
+                border-radius: 150px 0px 0px 150px;
+
+            }
+            .preview-left-2-circle{
+                width: 0%;
+            }
+        }
+
+        .loading-left-3{
+            @include width-and-height();
+            @include left-3;
+            left:0px;
+            
+            .loading-left-3-inverse-circle{
+                width: 100%;
+                background-color: #055068;
+                border-radius: 150px 0px 0px 0px;
+            }
+            .loading-left-3-circle{
+                width: 0%;
+            }
+
+        }
+        .loading-left-3-after{
+            @include width-and-height();
+            @include left-3;
+            left:-0.5%;
+
+            .loading-left-3-inverse-circle{
+                width: 100%;
+                background-color: #055068;
+                border-radius: 150px 0px 0px 0px;
+            }
+            .loading-left-3-circle{
+                width: 0%;
+            }
+        }
+        .first-page-left-3{
+            @include width-and-height;
+            @include left-3;
+            @include default-3;
+            left:-1%;
+
+            .first-page-left-3-inverse-circle{
+                width: 100%;
+                background-color: #F3F3F3;
+                border-radius: 150px 0px 0px 0px;
+            }
+            .lfirst-page-left-3-circle{
+                width: 0%;
+            }
+        }
+
+        .first-page-left-3-entry{
+            @include width-and-height;
+            @include left-3;
+            @include default-3;
+            left:0px;
+            transition: 1s;
+
+            .first-page-left-3-inverse-circle{
+                width: 100%;
+                background-color: #F3F3F3;
+                border-radius: 150px 0px 0px 0px;
+            }
+            .lfirst-page-left-3-circle{
+                width: 0%;
+            }
+        }
+
+        // .first-page-left-3-entry-finished{
+        //     @include width-and-height;
+        //     @include left-3;
+        //     @include default-3;
+        //     left:0px;
+        //     transition: 1s;
+
+        //     .first-page-left-3-inverse-circle{
+        //         width: 100%;
+        //         background-color: #F3F3F3;
+        //         border-radius: 150px 0px 0px 0px;
+        //     }
+        //     .lfirst-page-left-3-circle{
+        //         width: 0%;
+        //     }
+        // }
+
+        .complete-left-3{
+            @include width-and-height;
+            @include left-3;
+            @include default-3;
+            left:-19%;
+            border-radius: 0px 200px 0px 0px;
+
+        }
+        .preview-left-3{
+            @include width-and-height;
+            @include left-3;
+            @include default-3;
+            left:-19%;
+            border-radius: 0px 200px 0px 0px;
+
+        }
+        .loading-left-4{
+            @include width-and-height();
+            @include left-4;
+            left:0px;
+
+            .loading-left-4-inverse-circle{
+                width: 100%;
+                background-color: #055068;
+                border-radius: 0px 0px 0px 150px;
+            }
+            .loading-left-4-circle{
+                width: 0%;
+            }
+
+        }
+        .loading-left-4-after{
+            @include width-and-height();
+            @include left-4;
+            left:-0.5%;
+            .loading-left-4-inverse-circle{
+                width: 100%;
+                background-color: #055068;
+                border-radius: 0px 0px 0px 150px;
+            }
+            .loading-left-4-circle{
+                width: 0%;
+            }
+        }
+        .first-page-left-4{
+            @include width-and-height();
+            @include default-4;
+            @include left-4;
+            left:-2%;
+            top:39%;
+            transition: 1s;
+            
+            // height: 10vh;
+
+            .first-page-left-4-inverse-circle{
+                width: 100%;
+                background-color: #F3F3F3;
+                border-radius: 0px 0px 0px 150px;
+            }
+            .first-page-left-4-circle{
+                width: 0%;
+            }
+        }
+        .first-page-left-4-entry{
+            @include width-and-height();
+            @include default-4;
+            @include left-4;
+            left:0px;
+            top:39%;
+            transition: 1s;
+
+            
+            // height: 10vh;
+
+            .first-page-left-4-inverse-circle{
+                width: 100%;
+                background-color: #F3F3F3;
+                border-radius: 0px 0px 0px 150px;
+            }
+            .first-page-left-4-circle{
+                width: 0%;
+            }
+        }
+
+        // .first-page-left-4-entry-finished{
+        //     @include width-and-height();
+        //     @include default-4;
+        //     @include left-4;
+        //     left:0px;
+        //     top:39%;
+        //     transition: 1s;
+
+            
+        //     // height: 10vh;
+
+        //     .first-page-left-4-inverse-circle{
+        //         width: 100%;
+        //         background-color: #F3F3F3;
+        //         border-radius: 0px 0px 0px 150px;
+        //     }
+        //     .first-page-left-4-circle{
+        //         width: 0%;
+        //     }
+        // }
+        .complete-left-4{
+            @include width-and-height();
+            @include default-4;
+            @include left-4;
+            top:41%;
+            left:-19%;
+            background-color: $accent-color;
+            border-radius: 0px 0px 200px 0px;
+            
+            // height: 10vh;
+
+        }
+        .preview-left-4{
+            @include width-and-height();
+            @include default-4;
+            @include left-4;
+            top:41%;
+            left:-19%;
+            background-color: $accent-color;
+            border-radius: 0px 0px 200px 0px;
+            background-color: #FEB8B9;
+            // height: 10vh;
+
+        }
+        .loading-left-5{
+            @include width-and-height();
+            @include left-5;
+            left:-5%;
+            
+
+        }
+        .loading-left-5-after{
+            @include width-and-height();
+            @include left-5;
+            left:-5.5%;
+        }
+        .first-page-left-5{
+            @include width-and-height();
+            @include default-5;
+            background-color: #FEB8B9;
+            left:-18%;
+            border-radius: 0px 200px 0px 0px;
+            transition:1s
+            
+        }
+
+        .first-page-left-5-entry{
+            @include width-and-height();
+            @include default-5;
+            background-color: #FEB8B9;
+            left:-15%;   
+            border-radius: 0px 200px 0px 0px;
+            transition:1s
+            
+        }
+
+        // .first-page-left-5-entry-finished{
+        //     @include width-and-height();
+        //     @include default-5;
+        //     background-color: #FEB8B9;
+        //     left:-16%;
+        //     border-radius: 0px 200px 0px 0px;
+        //     transition:1s
+            
+        // }
+        .complete-left-5{
+            @include width-and-height();
+            @include default-5;
+            background-color: #FEAC00;
+            left:13%;
+            width:17%;
+            top:58%;
+            border-radius: 150px 150px 150px 150px;
+
+            
+        }
+        .preview-left-5{
+            @include width-and-height();
+            @include default-5;
+            background-color: #FE6C59;
+            left:13%;
+            width:17%;
+            top:58%;
+            border-radius: 150px 150px 150px 150px;
+
+            
+        }
+        .loading-left-6{
+            @include width-and-height();
+            @include left-6;
+            left:-15%;
+
+        }
+        .loading-left-6-after{
+            @include width-and-height();
+            @include left-6;
+            left:-15.5%;
+        }
+        .first-page-left-6{
+            @include width-and-height;
+            @include default-6;
+            background-color: #FE6C59;
+            left:-28%;
+            border-radius: 0px 0px 200px 0px;   
+            transition: 1s;
+        }
+        .first-page-left-6-entry{
+            @include width-and-height;
+            @include default-6;
+            background-color: #FE6C59;
+            left:-25%;
+            border-radius: 0px 0px 200px 0px;
+            transition: 1s;
+        }
+
+        // .first-page-left-6-entry-finished{
+        //     @include width-and-height;
+        //     @include default-6;
+        //     background-color: #FE6C59;
+        //     left:-26%;
+        //     border-radius: 0px 0px 200px 0px;
+        //     transition: 1s;
+        // }
+        .complete-left-6{
+            @include width-and-height;
+            @include default-6;
+            background-color: #FFFF;
+            left:-22%;
+            top:76%;
+            border-radius: 0px 150px 150px 0px;
+
+        }
+        .preview-left-6{
+            @include width-and-height;
+            @include default-6;
+            background-color: #80D4DE;
+            left:-22%;
+            top:76%;
+            border-radius: 0px 150px 150px 0px;
+
+        }
+        .loading-left-7{
+            @include width-and-height();
+            @include left-7;
+            left:10%;
+
+        }
+        .loading-left-7-after{
+            @include width-and-height();
+            @include left-7;
+            left:9.5%;
+        }
+        .first-page-left-7{
+            @include width-and-height;
+            @include default-7;
+            background-color: #FFFF;
+            left:37%;
+            top:92%;
+            border-radius: 150px 150px 0px 0px;
+            transition: 1s;
+            // display: none;
+        }
+        .first-page-left-7-entry{
+            @include width-and-height;
+            @include default-7;
+            background-color: #FFFF;
+            left:40%;
+            top:92%;
+            border-radius: 150px 150px 0px 0px;
+            transition: 1s;
+
+            // display: none;
+        }
+
+        .first-page-left-7-entry-finished{
+            @include width-and-height;
+            @include default-7;
+            background-color: #FFFF;
+            left:41%;
+            top:92%;
+            border-radius: 150px 150px 0px 0px;
+            transition: 1s;
+            // display: none;
+        }
+        .complete-left-7{
+            @include width-and-height;
+            @include default-7;
+            background-color: #FEB8B9;
+            top:93%;
+            left:-2%;
+            border-radius: 0px 200px 0px 0px;
+            // display: none;
+        }
+        .preview-left-7{
+            @include width-and-height;
+            @include default-7;
+            background-color: #0E9263;
+            top:93%;
+            left:-2%;
+            border-radius: 0px 200px 0px 0px;
+            // display: none;
+        }
+
+        .loading-right-1{
+            @include width-and-height();
+            @include right-1;
+            right:-15%;
+        }
+        .loading-right-1-after{
+            @include width-and-height();
+            @include right-1;
+            right:-15.5%;
+        }
+        .first-page-right-1{
+            @include width-and-height;
+            @include default-1;
+            background-color:#FFAB00;
+            right:-8%;
+            border-radius:0px 0px 0px 100px;
+            transition: 1s
+        }
+        .first-page-right-1-entry{
+            @include width-and-height;
+            @include default-1;
+            background-color:#FFAB00;
+            right:-5%;
+            border-radius:0px 0px 0px 100px;
+            transition: 0.2s;
+        }
+        .complete-right-1{
+            @include width-and-height;
+            @include default-1;
+            background-color:#FFAB00;
+            top:-8%;
+            right:25%;
+            border-radius:150px 150px 150px 150px;
+            width:20%;
+
+            .complete-right-1-inverse-circle{
+                @include width-and-height;
+                background-color: #FFFF;
+                
+                width: 10%;
+                right: 0px;
+                // border-radius: 0px 150px 150px 0px;
+
+            }
+            .complete-right-1-circle{
+                @include width-and-height;
+                background-color: #0E9263;
+                border-radius: 0px 150px 150px 0px;
+                right: 0px;
+                width: 10%;
+            }
+        }
+        .preview-right-1{
+            @include width-and-height;
+            @include default-1;
+            background-color:#0E9263;
+            // top:-8%;
+            right:25%;
+            border-radius:150px 150px 150px 150px;
+            width:20%;
+
+            // .complete-right-1-inverse-circle{
+            //     @include width-and-height;
+            //     background-color: #FFFF;
+                
+            //     width: 10%;
+            //     right: 0px;
+            //     // border-radius: 0px 150px 150px 0px;
+
+            // }
+            // .complete-right-1-circle{
+            //     @include width-and-height;
+            //     background-color: #0E9263;
+            //     border-radius: 0px 150px 150px 0px;
+            //     right: 0px;
+            //     width: 10%;
+            // }
+        }
+        .loading-right-2{
+            @include width-and-height();
+            @include right-2;
+            right:15%;
+
+        }
+        .first-page-right-2{
+            @include width-and-height;
+            @include default-2;
+            background-color:#E9D8BB;
+            right:-3%;
+            transition: 1s;
+
+            .first-page-right-2-inverse-circle{
+                @include width-and-height;
+                background-color: #F3F3F3;
+                // width: 100%;
+                border-radius: 0px 150px 150px 0px;
+
+
+
+            }
+            .first-page-right-2-circle{
+                width: 0%;
+            }
+
+        }
+        .first-page-right-2-entry{
+            @include width-and-height;
+            @include default-2;
+            background-color:#E9D8BB;
+            right:0%;
+            transition: 1s;
+
+            .first-page-right-2-inverse-circle{
+                @include width-and-height;
+                background-color: #F3F3F3;
+                // width: 100%;
+                border-radius: 0px 150px 150px 0px;
+
+
+
+            }
+            .first-page-right-2-circle{
+                width: 0%;
+            }
+
+        }
+        .complete-right-2{
+            @include width-and-height;
+            @include default-2;
+            background-color:#E9D8BB;
+            right:-12%;
+            border-radius: 200px 0px 0px 0px;
+
+        }
+        .preview-right-2{
+            @include width-and-height;
+            @include default-2;
+            background-color:#055068;
+            right:-12%;
+            border-radius: 200px 0px 0px 0px;
+
+        }
+        .loading-right-2-after{
+            @include width-and-height();
+            @include right-2;
+            right:15.5%;
+        }
+        .loading-right-3{
+            @include width-and-height();
+            @include right-3;
+            right:-14%;
+        }
+        .first-page-right-3{
+            @include width-and-height;
+            @include default-3;
+            background-color:#FFFF;
+            right:-18%;
+            border-radius: 200px 0px 0px 0px;
+            transition: 1s;
+        }
+        .first-page-right-3-entry{
+            @include width-and-height;
+            @include default-3;
+            background-color:#FFFF;
+            right:-15%;
+            border-radius: 200px 0px 0px 0px;
+            transition: 1s;
+        }
+        .complete-right-3{
+            @include width-and-height;
+            @include default-3;
+            background-color:#FEAC00;
+            right:-22%;
+            border-radius: 0px 0px 0px 200px;
+        }
+        .preview-right-3{
+            @include width-and-height;
+            @include default-3;
+            background-color:#FE6C59;
+            right:-22%;
+            border-radius: 0px 0px 0px 200px;
+        }
+        .loading-right-3-after{
+            @include width-and-height();
+            @include right-3;
+            right:-14.55%;
+        }
+        .loading-right-4{
+            @include width-and-height();
+            @include right-4;
+            right:-19%;
+        }
+        .loading-right-4-after{
+            @include width-and-height();
+            @include right-4;
+            right:-19.5%;
+        }
+        .first-page-right-4{
+            @include width-and-height;
+            background-color:#FFB8B9;
+            top:41%;
+            right:-18%;
+            border-radius: 0px 0px 0px 200px;
+            transition: 1s;
+        }
+        .first-page-right-4-entry{
+            @include width-and-height;
+            background-color:#FFB8B9;
+            top:41%;
+            right:-15%;
+            border-radius: 0px 0px 0px 200px;
+            transition:1s
+        }
+        .complete-right-4{
+            @include width-and-height;
+            background-color:#FFFF;
+            top:40%;
+            right:-4%;
+            border-radius: 150px 0px 0px 150px;
+
+        }
+        .preview-right-4{
+            @include width-and-height;
+            background-color:#E9D8BB;
+            top:40%;
+            right:-4%;
+            border-radius: 150px 0px 0px 150px;
+
+        }
+        .loading-right-5{
+            @include width-and-height();
+            @include right-5;
+            right:-10%;
+            .loading-right-5-inverse-circle{
+                background-color: #FFFF;
+                @include width-and-height();
+                border-radius: 0px 0px 0px 150px;
+                position: fixed;
+                top: 59%;
+                right:-19%;
+
+            }
+            .loading-right-5-circle{
+                width: 0%;
+            }
+        }
+        .loading-right-5-after{
+            @include width-and-height();
+            @include right-5;
+            right:-10.5%;
+            .loading-right-5-inverse-circle{
+                background-color: #FFFF;
+                @include width-and-height();
+                border-radius: 0px 0px 0px 150px;
+                position: fixed;
+                top: 59%;
+                right:-19%;
+
+            }
+            .loading-right-5-circle{
+                width: 0%;
+            }
+        }
+        .first-page-right-5{
+            @include width-and-height;
+            @include default-5;
+            background-color:#FF6C59;
+            right:7%;
+            top: 58%;
+            width:15%;
+            border-radius: 1vw 10vw 10vw 1vw;
+            transition: 1s;
+        }
+        .first-page-right-5-entry{
+            @include width-and-height;
+            @include default-5;
+            background-color:#FF6C59;
+            right:10%;
+            top: 58%;
+            width:15%;
+            border-radius: 1vw 10vw 10vw 1vw;
+            transition: 1s;
+        }
+        .complete-right-5{
+            @include width-and-height;
+            @include default-5;
+            background-color:#E9D8BB;
+            top:57%;
+            right:-4%;
+            width:10%;
+
+            // border-radius: 150px 0px 0px 150px;
+            .complete-right-5-inverse-circle{
+                background-color: #0E9263;
+                @include width-and-height();
+                border-radius: 0px 150px 150px 150px;
+                position: fixed;
+                top: 57%;
+                right:0;
+
+            }
+            .complete-right-5-circle{
+                width: 0%;
+            }
+        }
+        .preview-right-5{
+            @include width-and-height;
+            @include default-5;
+            background-color:#FFFF;
+            top:57%;
+            right:-4%;
+            width:20%;
+
+            // border-radius: 150px 0px 0px 150px;
+            .preview-right-5-inverse-circle{
+                background-color: $main-color;
+                @include width-and-height();
+                border-radius: 0px 150px 0px 150px;
+                position: fixed;
+                top: 57%;
+                right:0;
+
+            }
+            .complete-right-5-circle{
+                width: 0%;
+            }
+        }
+        .loading-right-6{
+            @include width-and-height();
+            @include right-6;
+            right:-15%;
+            .loading-right-6-inverse-circle{
+                @include width-and-height();
+                background-color:#055068;
+                position: fixed;
+                top: 76%;
+                right:0px;
+                border-radius: 150px 150px 150px 150px;
+            }
+            .loading-right-6-circle{
+                @include width-and-height();
+                background-color:#FFFF;
+                position: fixed;
+                top: 76%;
+                right:10%;
+                border-radius: 150px 150px 150px 150px;
+
+
+            }
+        }
+        .loading-right-6-after{
+            @include width-and-height();
+            @include right-6;
+            right:-15.5%;
+            .loading-right-6-inverse-circle{
+                @include width-and-height();
+                background-color:#055068;
+                position: fixed;
+                top: 76%;
+                right:0px;
+                border-radius: 150px 150px 150px 150px;
+            }
+            .loading-right-6-circle{
+                @include width-and-height();
+                background-color:#FFFF;
+                position: fixed;
+                top: 76%;
+                right:10%;
+                border-radius: 150px 150px 150px 150px;
+
+
+            }
+        }
+        .first-page-right-6{
+            @include width-and-height;
+            @include default-6;
+            background-color: #055068;
+            right:-23%;
+            top:75%;
+            border-radius: 150px 0px 0px 150px;
+            transition: 1s; 
+        }
+        .first-page-right-6-entry{
+            @include width-and-height;
+            @include default-6;
+            background-color: #055068;
+            right:-20%;
+            top:75%;
+            border-radius: 150px 0px 0px 150px; 
+            transition: 1s;
+        }
+        .complete-right-6{
+            @include width-and-height;
+            @include default-6;
+            background-color: #FEAC00;
+            top:74%;
+            right:-7%;
+            border-radius: 200px 0px 0px 0px; 
+        }
+        .preview-right-6{
+            @include width-and-height;
+            @include default-5;
+            background-color:#FFFF;
+            top:74%;
+            right:-4%;
+            width:20%;
+
+            // border-radius: 150px 0px 0px 150px;
+            .preview-right-6-inverse-circle{
+                background-color: $main-color;
+                @include width-and-height();
+                border-radius: 0px 0px 150px 150px;
+                position: fixed;
+                top: 74%;
+                right:0;
+
+            }
+            .complete-right-6-circle{
+                width: 0%;
+            }
+        }
+        .loading-right-7{
+            @include width-and-height();
+            @include right-7;
+            right:-10%;
+        }
+        .loading-right-7-after{
+            @include width-and-height();
+            @include right-7;
+            right:-10.5%;
+            
+        }
+        .first-page-right-7{
+            @include width-and-height;
+            @include default-7;
+            background-color:#009163;
+            top:92%;
+            right:-8%;
+            border-radius: 150px 0px 0px 0px;
+            transition: 1s;
+
+        }
+        .first-page-right-7-entry{
+            @include width-and-height;
+            @include default-7;
+            background-color:#009163;
+            top:92%;
+            right:-5%;
+            border-radius: 150px 0px 0px 0px;
+            transition: 1s;
+        }
+        .complete-right-7{
+            @include width-and-height;
+            @include default-7;
+            background-color:#FFFF;
+            top:91%;
+            right:-7%;
+            border-radius: 0px 0px 0px 200px;
+        }
+        .preview-right-7{
+            @include width-and-height;
+            @include default-7;
+            background-color:#FFAB00;
+            top:91%;
+            right:-7%;
+            border-radius: 0px 0px 0px 200px;
+        }
+    }
+}
+
+
+
